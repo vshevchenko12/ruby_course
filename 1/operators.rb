@@ -1,14 +1,15 @@
+# frozen_string_literal: true
+
 name = 'Sample'
 add  = 1 + 1
-sub  = 1 - 1
+sub  = 2 - 1
 mult = 1 * 1
-div  = 1 / 1
+div  = 2 / 1
 
 eq1 = 1 < 2
 eq2 = 1 > 2
 eq3 = 1 == 2
 eq4 = 1 <= 2
-
 
 puts name
 puts add

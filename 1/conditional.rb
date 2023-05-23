@@ -1,17 +1,19 @@
+# frozen_string_literal: true
+
 if 2 < 1
-  puts "yes"
+  puts 'yes'
 else
-  puts "no"
+  puts 'no'
 end
 
-puts "yes" unless 2 < 1
+puts 'yes' unless 2 < 1
 
-name = "test"
+name = 'test'
 
-if name == "test2"
-  puts "name is " + name
-elsif name == "test3"
-  puts "name is " + name
-else 
-  puts "name is " + name
+if name == 'test2'
+  puts "name is #{name}"
+elsif name == 'test3'
+  puts "name is #{name}"
+else
+  puts "name is #{name}"
 end
