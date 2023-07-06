@@ -17,3 +17,12 @@ elsif name == 'test3'
 else
   puts "name is #{name}"
 end
+
+
+if name == 'test' && 1 < 2
+  puts "name is #{name}"
+end
+
+if name == 'test' || 1 < 2 && name != 'test2'
+  puts "name is #{name}"
+end
