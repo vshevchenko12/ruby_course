@@ -14,6 +14,15 @@ def division3(name = '', age = nil, weight = 71)
   puts "My weight is #{weight}"
 end
 
+def division4(name = '', age = nil, weight = 71)
+  if name != 'Nikola' && age == nil
+    var = 'Hello,'
+    var += ' world!'
+  end
+  var
+end
+
 division1
 division2('John')
 division3('John')
+puts division4('John')
