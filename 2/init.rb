@@ -9,8 +9,22 @@ require_relative 'item'
 
 # p cart
 
-item = Item.new({price: 25, weight: 120, name: 'Car'})
-item1 = Item.new({price: 25, weight: 120, name: 'Car'})
+# item = Item.new({price: 25, weight: 120, name: 'Car'})
+# item1 = Item.new({price: 25, weight: 120, name: 'Car'})
 
-item.info { |value| puts value }
-item1.info
+# item.info { |value| puts value }
+# item1.info
+
+
+item1 = Item.new({price: 25, weight: 120, name: 'Car'})
+item2 = Item.new({weight: 120, name: 'Car'})
+
+cart = Cart.new
+cart.add_item(item1)
+cart.add_item(item2)
+
+p cart.items
+
+cart.delete_invalid_items
+
+p cart.items
