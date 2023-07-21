@@ -21,7 +21,7 @@ Dir["*.rb"].each { |f| require_relative f }
 
 
 # item1 = Item.new({price: 25, weight: 120, name: 'Car'})
-item1 = VirtualItem.new({price: 25, weight: 120, name: 'Car'})
+item1 = VirtualItem.new({price: 25, name: 'Car'})
 item2 = RealItem.new({weight: 120, name: 'Car'})
 
 cart = Cart.new
@@ -37,3 +37,6 @@ p cart.items
 # virtual = VirtualItem.new
 
 # p virtual
+
+p item1.respond_to? :weight
+p item2.respond_to? :weight
