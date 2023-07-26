@@ -22,6 +22,8 @@ class Item
   # GETTER AND SETTER version 3
   attr_accessor :price, :name
 
+  @@discount = 0.1
+
   def initialize(options = {})
     @price = options[:price]
     @name = options[:name]
@@ -34,6 +36,18 @@ class Item
     else
       puts 'No price specified'
     end
+  end
+  def self.discount
+    if Time.now.month == 7
+      @@discount += 0.3
+    else
+      @@discount
+    end
+  end
+
+  def price
+    # @price - @price * Item.discount # only for Item class
+    @price - @price * self.class.discount # for all classes
   end
 end
 

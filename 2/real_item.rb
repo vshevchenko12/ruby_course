@@ -12,4 +12,12 @@ class RealItem < Item
       super
     end
   end
+
+   def self.discount
+    if Time.now.month == 7
+      @@discount
+    else
+      @@discount += 0.1
+    end
+  end
 end
